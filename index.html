@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ibrahim Morad — Django Backend Developer</title>
+  <meta name="description" content="Ibrahim Morad is a Django backend developer specializing in REST APIs, PostgreSQL, and Docker-deployed production systems." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Nav ── -->
+  <nav>
+    <span class="nav-logo">ibrahim.morad</span>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section id="hero">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-tag">Django Backend Developer</div>
+        <h1>Building<br><em>reliable</em><br>backends.</h1>
+        <p class="hero-desc">
+          Production-grade APIs, secure auth systems, and Dockerized deployments —
+          built with Python, Django, and a physicist's obsession with correctness.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="ibrahim_morad_cv.pdf" class="btn-secondary" download>Download CV</a>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-box fade-up">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Production deployments</div>
+        </div>
+        <div class="stat-box fade-up">
+          <div class="stat-num">3K+</div>
+          <div class="stat-label">Physics solutions authored</div>
+        </div>
+        <div class="stat-box fade-up">
+          <div class="stat-num">135%</div>
+          <div class="stat-label">ALX Backend score</div>
+        </div>
+        <div class="stat-box fade-up">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Attention to detail</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── About ── -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-aside">
+          <div class="section-label">About</div>
+          <h2>Who<br>I am.</h2>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-icon">📍</span>
+              Nasr City, Cairo, Egypt
+            </li>
+            <li>
+              <span class="contact-icon">✉️</span>
+              <a href="mailto:ibrahimmorad31@gmail.com">ibrahimmorad31@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-icon">💼</span>
+              <a href="https://www.linkedin.com/in/ibrahim-morad-django/" target="_blank">LinkedIn</a>
+            </li>
+            <li>
+              <span class="contact-icon">🐙</span>
+              <a href="https://github.com/IbrahimMurad" target="_blank">GitHub</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="about-body fade-up">
+          <p>
+            I'm a <span class="highlight">Django backend developer</span> with a background
+            in theoretical physics and scientific research. That background isn't incidental —
+            it shapes how I approach engineering: rigorous, systematic, and intolerant of
+            hand-wavy solutions.
+          </p>
+          <p>
+            I specialize in building <span class="highlight">REST APIs, multi-role
+            authentication systems, and production-ready deployments</span> using Docker.
+            I've shipped platforms used by real students and educators, integrated third-party
+            services (Bunny.net, Firebase), and handled the full cycle from schema design to
+            containerized deployment.
+          </p>
+          <p>
+            I hold a <span class="highlight">Backend Specialization certificate from ALX
+            Africa</span> (scored 135%) and am currently open to full-time and freelance
+            opportunities — remote or Cairo-based.
+          </p>
+          <div class="about-tags">
+            <span class="about-tag">Python</span>
+            <span class="about-tag">Django</span>
+            <span class="about-tag">DRF</span>
+            <span class="about-tag">PostgreSQL</span>
+            <span class="about-tag">Docker</span>
+            <span class="about-tag">Redis</span>
+            <span class="about-tag">Celery</span>
+            <span class="about-tag">pytest</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Projects ── -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-label">Work</div>
+      <h2>Projects.</h2>
+
+      <div class="projects-grid">
+
+        <!-- Ammar Academy -->
+        <div class="project-card fade-up">
+          <div class="project-status">Client Project · Private Repo</div>
+          <div class="project-name">Ammar Academy</div>
+          <p class="project-desc">
+            Production-ready e-learning platform. Multi-role user system (admin, teacher,
+            paid/unpaid student, visitor), social login, auto-generated quizzes, parent
+            reports, analytics dashboard, online payments, push notifications, and
+            secure video streaming. Fully Dockerized with pytest coverage.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">Django</span>
+            <span class="stack-tag">DRF</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">Redis</span>
+            <span class="stack-tag">Celery</span>
+            <span class="stack-tag">Docker</span>
+            <span class="stack-tag">Bunny.net</span>
+            <span class="stack-tag">Firebase FCM</span>
+          </div>
+          <div class="project-links">
+            <span style="font-family:var(--mono);font-size:0.75rem;color:var(--muted);">
+              Repo private — available upon request
+            </span>
+          </div>
+        </div>
+
+        <!-- QuizCraft -->
+        <div class="project-card fade-up">
+          <div class="project-status live">Live</div>
+          <div class="project-name">QuizCraft</div>
+          <p class="project-desc">
+            Exam generation platform that produces unique, randomized exams per student
+            from a shared question bank. Built with a focus on preventing cheating through
+            question-level randomization. Enhanced with HTMX for smooth interactions and
+            Celery for async processing.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">Django</span>
+            <span class="stack-tag">Django Templates</span>
+            <span class="stack-tag">HTMX</span>
+            <span class="stack-tag">Tailwind CSS</span>
+            <span class="stack-tag">Celery</span>
+          </div>
+          <div class="project-links">
+            <a href="https://ibrahimmorad.pythonanywhere.com" target="_blank" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Demo
+            </a>
+          </div>
+        </div>
+
+        <!-- Maryema -->
+        <div class="project-card fade-up">
+          <div class="project-status">Personal Project</div>
+          <div class="project-name">Maryema</div>
+          <p class="project-desc">
+            Multi-divisional e-commerce backend for clothes and accessories. Features
+            JWT authentication, product catalog with filtering, cart and order management,
+            a ratings system, Redis caching, and Swagger API documentation. Frontend
+            built separately in React/Next.js.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">Django</span>
+            <span class="stack-tag">DRF</span>
+            <span class="stack-tag">Simple JWT</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">Redis</span>
+            <span class="stack-tag">Swagger</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/IbrahimMurad/Maryema" target="_blank" class="project-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Todo List -->
+        <div class="project-card fade-up">
+          <div class="project-status live">Live</div>
+          <div class="project-name">Todo List</div>
+          <p class="project-desc">
+            Full-stack task management app with Google OAuth, drag-and-drop reordering,
+            dark mode, and filter views. Anonymous users get local storage persistence.
+            Deployed on Vercel.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">Next.js</span>
+            <span class="stack-tag">TypeScript</span>
+            <span class="stack-tag">Tailwind CSS</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">Auth.js</span>
+          </div>
+          <div class="project-links">
+            <a href="https://todo-list-nine-psi-73.vercel.app/" target="_blank" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Demo
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Skills ── -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-label">Toolbox</div>
+      <h2>Skills.</h2>
+
+      <div class="skills-grid">
+        <div class="skill-group fade-up">
+          <div class="skill-group-title">Backend</div>
+          <div class="skill-items">
+            <span class="skill-item">Python</span>
+            <span class="skill-item">Django</span>
+            <span class="skill-item">DRF</span>
+            <span class="skill-item">Celery</span>
+            <span class="skill-item">Simple JWT</span>
+            <span class="skill-item">django-allauth</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-up">
+          <div class="skill-group-title">Databases</div>
+          <div class="skill-items">
+            <span class="skill-item">PostgreSQL</span>
+            <span class="skill-item">Redis</span>
+            <span class="skill-item">MySQL</span>
+            <span class="skill-item">SQLite</span>
+            <span class="skill-item">MongoDB</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-up">
+          <div class="skill-group-title">DevOps & Tools</div>
+          <div class="skill-items">
+            <span class="skill-item">Docker</span>
+            <span class="skill-item">Nginx</span>
+            <span class="skill-item">Traefik</span>
+            <span class="skill-item">Git</span>
+            <span class="skill-item">Bash</span>
+            <span class="skill-item">Linux</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-up">
+          <div class="skill-group-title">Testing</div>
+          <div class="skill-items">
+            <span class="skill-item">pytest</span>
+            <span class="skill-item">unittest</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-up">
+          <div class="skill-group-title">Integrations</div>
+          <div class="skill-items">
+            <span class="skill-item">Bunny.net</span>
+            <span class="skill-item">Firebase FCM</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-up">
+          <div class="skill-group-title">Frontend (supporting)</div>
+          <div class="skill-items">
+            <span class="skill-item">HTML/CSS</span>
+            <span class="skill-item">HTMX</span>
+            <span class="skill-item">Tailwind CSS</span>
+            <span class="skill-item">TypeScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ── -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="section-label" style="color:rgba(255,255,255,0.4)">Contact</div>
+      <h2>Let's work together.</h2>
+      <p>Open to full-time roles, freelance projects, and remote opportunities.</p>
+      <div class="contact-links">
+        <a href="mailto:ibrahimmorad31@gmail.com" class="contact-btn">
+          ✉️ &nbsp;ibrahimmorad31@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/ibrahim-morad-django/" target="_blank" class="contact-btn">
+          💼 &nbsp;LinkedIn
+        </a>
+        <a href="https://github.com/IbrahimMurad" target="_blank" class="contact-btn">
+          🐙 &nbsp;GitHub
+        </a>
+      </div>
+      <p class="footer-note">Built with HTML, CSS & zero frameworks. © 2025 Ibrahim Morad.</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
